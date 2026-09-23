@@ -10,7 +10,7 @@ A aplicação foi desenvolvida para representar uma ONG fictícia de inclusão s
 
 A página inicial apresenta a proposta da ONG e seus principais projetos sociais.
 
-![Página inicial e projetos](img/inicio-projetos.jpeg)
+![Página inicial e projetos](img/inicio_projetos.jpeg)
 
 ---
 
