@@ -1,0 +1,380 @@
+/* =========================================================
+   DESIGN SYSTEM
+   ========================================================= */
+
+:root {
+
+    /* CORES */
+    --cor-primaria: #2E7D32;
+    --cor-primaria-escura: #1B5E20;
+    --cor-primaria-clara: #66BB6A;
+
+    --cor-secundaria: #1976D2;
+    --cor-secundaria-clara: #64B5F6;
+
+    --cor-destaque: #FFB300;
+
+    --cor-fundo: #F7F9F7;
+    --cor-branco: #FFFFFF;
+
+    --cor-texto: #212121;
+    --cor-texto-secundario: #555555;
+    --cor-borda: #DADADA;
+
+
+    /* TIPOGRAFIA */
+    --fonte-xs: 0.75rem;
+    --fonte-sm: 0.875rem;
+    --fonte-md: 1rem;
+    --fonte-lg: 2rem;
+    --fonte-xl: 2.5rem;
+
+
+    /* ESPAÇAMENTOS */
+    --espaco-1: 4px;
+    --espaco-2: 8px;
+    --espaco-3: 16px;
+    --espaco-4: 24px;
+    --espaco-5: 32px;
+    --espaco-6: 48px;
+    --espaco-7: 64px;
+}
+
+
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+   ========================================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   CABEÇALHO E NAVEGAÇÃO
+   ========================================================= */
+
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+
+    padding: var(--espaco-4) var(--espaco-6);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: var(--espaco-4);
+}
+
+header h1 {
+    font-size: var(--fonte-lg);
+}
+
+nav {
+    display: flex;
+    gap: var(--espaco-4);
+}
+
+nav a {
+    color: var(--cor-branco);
+    text-decoration: none;
+
+    font-size: var(--fonte-md);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--cor-destaque);
+}
+
+
+/* =========================================================
+   SEÇÕES
+   ========================================================= */
+
+section {
+    margin-bottom: var(--espaco-7);
+}
+
+section h2 {
+    font-size: var(--fonte-xl);
+    color: var(--cor-primaria-escura);
+
+    margin-bottom: var(--espaco-3);
+}
+
+section p {
+    font-size: var(--fonte-md);
+    color: var(--cor-texto-secundario);
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   PROJETOS
+   ========================================================= */
+
+.projetos-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: var(--espaco-4);
+}
+
+article {
+    background-color: var(--cor-branco);
+
+    border: 1px solid var(--cor-borda);
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+article img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+article h3,
+article p {
+    margin-left: var(--espaco-3);
+    margin-right: var(--espaco-3);
+}
+
+article h3 {
+    margin-top: var(--espaco-3);
+    margin-bottom: var(--espaco-2);
+
+    font-size: var(--fonte-lg);
+    color: var(--cor-primaria-escura);
+}
+
+article p {
+    margin-bottom: var(--espaco-4);
+}
+
+
+/* =========================================================
+   SEÇÃO "COMO AJUDAR"
+   ========================================================= */
+
+#como-ajudar {
+    background-color: var(--cor-branco);
+
+    padding: var(--espaco-5);
+
+    border-radius: 12px;
+    border-left: 6px solid var(--cor-destaque);
+}
+
+#como-ajudar a {
+    display: inline-block;
+
+    margin-top: var(--espaco-3);
+
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+
+    padding: var(--espaco-2) var(--espaco-4);
+
+    border-radius: 6px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#como-ajudar a:hover {
+    background-color: var(--cor-primaria-escura);
+}
+
+
+/* =========================================================
+   CONTATO
+   ========================================================= */
+
+.contato p {
+    margin-bottom: var(--espaco-2);
+}
+
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+
+footer {
+    background-color: var(--cor-primaria-escura);
+    color: var(--cor-branco);
+
+    text-align: center;
+
+    padding: var(--espaco-4);
+}
+
+footer p {
+    font-size: var(--fonte-sm);
+
+    margin-bottom: var(--espaco-2);
+}
+
+
+/* =========================================================
+   PÁGINA "COMO AJUDAR"
+   ========================================================= */
+
+.pagina-ajuda header {
+    justify-content: center;
+}
+
+.pagina-ajuda header nav {
+    display: flex;
+    gap: var(--espaco-4);
+}
+
+.pagina-ajuda header nav a {
+    color: var(--cor-branco);
+    text-decoration: none;
+
+    font-size: var(--fonte-md);
+    font-weight: bold;
+}
+
+.pagina-ajuda header nav a:hover {
+    color: var(--cor-destaque);
+}
+
+
+/* =========================================================
+   CONTEÚDO PRINCIPAL
+   ========================================================= */
+
+main {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: var(--espaco-6) var(--espaco-4);
+}
+
+main h1 {
+    font-size: var(--fonte-xl);
+
+    color: var(--cor-primaria-escura);
+
+    text-align: center;
+
+    margin-bottom: var(--espaco-3);
+}
+
+main > p {
+    text-align: center;
+
+    color: var(--cor-texto-secundario);
+
+    margin-bottom: var(--espaco-5);
+}
+
+
+/* =========================================================
+   FORMULÁRIO
+   ========================================================= */
+
+form {
+    background-color: var(--cor-branco);
+
+    padding: var(--espaco-5);
+
+    border: 1px solid var(--cor-borda);
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--espaco-2);
+}
+
+form label {
+    font-size: var(--fonte-md);
+    font-weight: bold;
+
+    color: var(--cor-texto);
+
+    margin-top: var(--espaco-2);
+}
+
+form input {
+    width: 100%;
+
+    padding: var(--espaco-3);
+
+    border: 1px solid var(--cor-borda);
+    border-radius: 6px;
+
+    font-size: var(--fonte-md);
+
+    outline: none;
+}
+
+form input:focus {
+    border-color: var(--cor-primaria);
+
+    box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.15);
+}
+
+
+/* =========================================================
+   BOTÃO DO FORMULÁRIO
+   ========================================================= */
+
+form button {
+    margin-top: var(--espaco-4);
+
+    padding: var(--espaco-3);
+
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: var(--fonte-md);
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--cor-primaria-escura);
+}
+
+
+/* =========================================================
+   VALIDAÇÃO DO FORMULÁRIO
+   ========================================================= */
+
+/* Campo inválido */
+.campo-invalido {
+    border: 2px solid red;
+}
+
+/* Campo válido */
+.campo-valido {
+    border: 2px solid rgb(102, 204, 102);
+}
+
+/* Mensagens exibidas durante a validação */
+.mensagem-validacao {
+    font-size: 0.875rem;
+
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
