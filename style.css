@@ -333,146 +333,76 @@ form button:hover {
 
 
 /* =========================================================
-   RESPONSIVIDADE PARA CELULAR
+   VERSÃO PARA CELULAR
    ========================================================= */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
-    /* Cabeçalho */
+    body {
+        overflow-x: hidden;
+    }
+
     header {
-        padding: 20px 16px;
-        flex-direction: column;
-        gap: 15px;
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 20px 15px !important;
+        gap: 15px !important;
         text-align: center;
     }
 
     header h1 {
-        font-size: 1.8rem;
-        margin: 0;
+        font-size: 28px !important;
+        margin: 0 !important;
     }
 
-    /* Navegação */
     nav {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px 16px;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 10px 15px !important;
+        width: 100% !important;
     }
 
     nav a {
-        font-size: 0.9rem;
+        font-size: 15px !important;
     }
 
-    /* Conteúdo */
     main {
-        width: 100%;
-        padding: 32px 20px;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 30px 20px !important;
     }
 
-    /* Títulos */
     section h2 {
-        font-size: 2rem;
+        font-size: 30px !important;
     }
 
-    main h1 {
-        font-size: 2rem;
-    }
-
-    /* Textos */
     section p {
-        font-size: 1rem;
+        font-size: 16px !important;
     }
 
-    /* Projetos */
     .projetos-container {
-        grid-template-columns: 1fr;
-        gap: 24px;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+        width: 100% !important;
     }
 
-    /* Imagens dos projetos */
+    article {
+        width: 100% !important;
+    }
+
     article img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
-
-    /* Título dos projetos */
-    article h3 {
-        font-size: 1.7rem;
-    }
-
-    /* Texto dos projetos */
-    article p {
-        font-size: 1rem;
-    }
-
-    /* Como ajudar */
-    #como-ajudar {
-        padding: 24px 20px;
-    }
-
-    /* Formulário */
-    form {
-        padding: 24px 20px;
-    }
-
-    /* Rodapé */
-    footer {
-        padding: 24px 16px;
-    }
-}
-
-
-/* =========================================================
-   CELULARES PEQUENOS
-   ========================================================= */
-
-@media (max-width: 480px) {
-
-    /* Cabeçalho */
-    header {
-        padding: 18px 12px;
-    }
-
-    header h1 {
-        font-size: 1.6rem;
-    }
-
-    /* Navegação */
-    nav {
-        gap: 8px 12px;
-    }
-
-    nav a {
-        font-size: 0.85rem;
-    }
-
-    /* Conteúdo */
-    main {
-        padding: 28px 16px;
-    }
-
-    /* Títulos */
-    section h2,
-    main h1 {
-        font-size: 1.8rem;
-    }
-
-    /* Projetos */
-    article img {
-        height: 180px;
+        width: 100% !important;
+        height: 200px !important;
+        object-fit: cover !important;
     }
 
     article h3 {
-        font-size: 1.5rem;
+        font-size: 25px !important;
     }
 
     article p {
-        font-size: 0.95rem;
-    }
-
-    /* Como ajudar */
-    #como-ajudar {
-        padding: 20px 16px;
+        font-size: 16px !important;
     }
 } 
