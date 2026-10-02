@@ -8,19 +8,14 @@
     --cor-primaria: #2E7D32;
     --cor-primaria-escura: #1B5E20;
     --cor-primaria-clara: #66BB6A;
-
     --cor-secundaria: #1976D2;
     --cor-secundaria-clara: #64B5F6;
-
     --cor-destaque: #FFB300;
-
     --cor-fundo: #F7F9F7;
     --cor-branco: #FFFFFF;
-
     --cor-texto: #212121;
     --cor-texto-secundario: #555555;
     --cor-borda: #DADADA;
-
 
     /* TIPOGRAFIA */
     --fonte-xs: 0.75rem;
@@ -28,7 +23,6 @@
     --fonte-md: 1rem;
     --fonte-lg: 2rem;
     --fonte-xl: 2.5rem;
-
 
     /* ESPAÇAMENTOS */
     --espaco-1: 4px;
@@ -45,7 +39,12 @@
    CONFIGURAÇÕES GERAIS
    ========================================================= */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
@@ -60,13 +59,10 @@ body {
 header {
     background-color: var(--cor-primaria);
     color: var(--cor-branco);
-
     padding: var(--espaco-4) var(--espaco-6);
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     gap: var(--espaco-4);
 }
 
@@ -82,7 +78,6 @@ nav {
 nav a {
     color: var(--cor-branco);
     text-decoration: none;
-
     font-size: var(--fonte-md);
     font-weight: bold;
 }
@@ -103,14 +98,12 @@ section {
 section h2 {
     font-size: var(--fonte-xl);
     color: var(--cor-primaria-escura);
-
     margin-bottom: var(--espaco-3);
 }
 
 section p {
     font-size: var(--fonte-md);
     color: var(--cor-texto-secundario);
-
     line-height: 1.7;
 }
 
@@ -121,25 +114,20 @@ section p {
 
 .projetos-container {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: var(--espaco-4);
 }
 
 article {
     background-color: var(--cor-branco);
-
     border: 1px solid var(--cor-borda);
     border-radius: 12px;
-
     overflow: hidden;
 }
 
 article img {
     width: 100%;
     height: 220px;
-
     object-fit: cover;
 }
 
@@ -152,7 +140,6 @@ article p {
 article h3 {
     margin-top: var(--espaco-3);
     margin-bottom: var(--espaco-2);
-
     font-size: var(--fonte-lg);
     color: var(--cor-primaria-escura);
 }
@@ -168,25 +155,18 @@ article p {
 
 #como-ajudar {
     background-color: var(--cor-branco);
-
     padding: var(--espaco-5);
-
     border-radius: 12px;
     border-left: 6px solid var(--cor-destaque);
 }
 
 #como-ajudar a {
     display: inline-block;
-
     margin-top: var(--espaco-3);
-
     background-color: var(--cor-primaria);
     color: var(--cor-branco);
-
     padding: var(--espaco-2) var(--espaco-4);
-
     border-radius: 6px;
-
     text-decoration: none;
     font-weight: bold;
 }
@@ -212,15 +192,12 @@ article p {
 footer {
     background-color: var(--cor-primaria-escura);
     color: var(--cor-branco);
-
     text-align: center;
-
     padding: var(--espaco-4);
 }
 
 footer p {
     font-size: var(--fonte-sm);
-
     margin-bottom: var(--espaco-2);
 }
 
@@ -241,7 +218,6 @@ footer p {
 .pagina-ajuda header nav a {
     color: var(--cor-branco);
     text-decoration: none;
-
     font-size: var(--fonte-md);
     font-weight: bold;
 }
@@ -256,28 +232,22 @@ footer p {
    ========================================================= */
 
 main {
+    width: 100%;
     max-width: 1000px;
-
     margin: 0 auto;
-
     padding: var(--espaco-6) var(--espaco-4);
 }
 
 main h1 {
     font-size: var(--fonte-xl);
-
     color: var(--cor-primaria-escura);
-
     text-align: center;
-
     margin-bottom: var(--espaco-3);
 }
 
 main > p {
     text-align: center;
-
     color: var(--cor-texto-secundario);
-
     margin-bottom: var(--espaco-5);
 }
 
@@ -288,45 +258,33 @@ main > p {
 
 form {
     background-color: var(--cor-branco);
-
     padding: var(--espaco-5);
-
     border: 1px solid var(--cor-borda);
     border-radius: 12px;
-
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-
     display: flex;
     flex-direction: column;
-
     gap: var(--espaco-2);
 }
 
 form label {
     font-size: var(--fonte-md);
     font-weight: bold;
-
     color: var(--cor-texto);
-
     margin-top: var(--espaco-2);
 }
 
 form input {
     width: 100%;
-
     padding: var(--espaco-3);
-
     border: 1px solid var(--cor-borda);
     border-radius: 6px;
-
     font-size: var(--fonte-md);
-
     outline: none;
 }
 
 form input:focus {
     border-color: var(--cor-primaria);
-
     box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.15);
 }
 
@@ -337,18 +295,13 @@ form input:focus {
 
 form button {
     margin-top: var(--espaco-4);
-
     padding: var(--espaco-3);
-
     background-color: var(--cor-primaria);
     color: var(--cor-branco);
-
     border: none;
     border-radius: 6px;
-
     font-size: var(--fonte-md);
     font-weight: bold;
-
     cursor: pointer;
 }
 
@@ -374,17 +327,14 @@ form button:hover {
 /* Mensagens exibidas durante a validação */
 .mensagem-validacao {
     font-size: 0.875rem;
-
     margin-top: 4px;
     margin-bottom: 10px;
 }
+
+
 /* =========================================================
    RESPONSIVIDADE PARA CELULAR
    ========================================================= */
-
-* {
-    box-sizing: border-box;
-}
 
 @media (max-width: 768px) {
 
@@ -398,6 +348,7 @@ form button:hover {
 
     header h1 {
         font-size: 1.8rem;
+        margin: 0;
     }
 
     /* Navegação */
@@ -405,7 +356,7 @@ form button:hover {
         width: 100%;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 12px;
+        gap: 10px 16px;
     }
 
     nav a {
@@ -418,11 +369,16 @@ form button:hover {
         padding: 32px 20px;
     }
 
-    /* Títulos das seções */
+    /* Títulos */
     section h2 {
         font-size: 2rem;
     }
 
+    main h1 {
+        font-size: 2rem;
+    }
+
+    /* Textos */
     section p {
         font-size: 1rem;
     }
@@ -435,7 +391,9 @@ form button:hover {
 
     /* Imagens dos projetos */
     article img {
+        width: 100%;
         height: 200px;
+        object-fit: cover;
     }
 
     /* Título dos projetos */
@@ -453,8 +411,68 @@ form button:hover {
         padding: 24px 20px;
     }
 
+    /* Formulário */
+    form {
+        padding: 24px 20px;
+    }
+
     /* Rodapé */
     footer {
         padding: 24px 16px;
     }
 }
+
+
+/* =========================================================
+   CELULARES PEQUENOS
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    /* Cabeçalho */
+    header {
+        padding: 18px 12px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    /* Navegação */
+    nav {
+        gap: 8px 12px;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+    }
+
+    /* Conteúdo */
+    main {
+        padding: 28px 16px;
+    }
+
+    /* Títulos */
+    section h2,
+    main h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Projetos */
+    article img {
+        height: 180px;
+    }
+
+    article h3 {
+        font-size: 1.5rem;
+    }
+
+    article p {
+        font-size: 0.95rem;
+    }
+
+    /* Como ajudar */
+    #como-ajudar {
+        padding: 20px 16px;
+    }
+} 
